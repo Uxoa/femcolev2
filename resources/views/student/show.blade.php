@@ -6,9 +6,23 @@
 
 @section('content')
     <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
+        <div class="studentCard">
+      
+            <img src="{{$user->image}}" alt="adriana" class="imageStudent">
+        
+        <div class="infoStudent">
+            <strong>Name:</strong>  {{ $student->name }}</p>
+            <p>Curso: </p>
+            <p>E-mail: {{$user->email}}</p>
+        </div>
+</div>
+
+
+
+
+
+
+
                     <div class="card-header">
                         <div class="float-left">
                             <span class="card-title">Show Student</span>
@@ -29,9 +43,7 @@
                             {{ $student->grades_id }}
                         </div>
 
-                    </div>
-                </div>
-            </div>
+        
         </div>
     </section>
 @endsection

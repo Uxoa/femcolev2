@@ -20,7 +20,7 @@
                                 <a href="{{ route('students.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
@@ -54,21 +54,13 @@
                                             
 											<td>{{ $student->name }}</td>
 											
-                                                <td> <h2>{{ $student->academicYear}}</h2>
+                                                <td> <h2>{{ $student->academicYear}}</h2></td>
                                                 <td> <h3>{{ $student->quarter}}</h3> </td>
                                                 <td> <h4>{{ $student->grade->subject}}</h4> </td>
                                                 <td> <h5>{{ $student->exam1}}</h5> </td>
                                                 <td> <h5>{{ $student->exam2}}</h5> </td>
                                                 <td> <h5>{{ $student->exam3}}</h5></td>
 
-                                            <td>
-                                                <form action="{{ route('students.destroy',$student->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('students.show',$student->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('students.edit',$student->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
-                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -77,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $students->links() !!}
+         
             </div>
         </div>
     </div>
