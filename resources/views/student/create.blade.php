@@ -5,17 +5,14 @@
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+    <section class="boxForm">
+    @includeif('partials.errors')
 
-                @includeif('partials.errors')
-
-                <div class="card card-default">
-                    <div class="card-header">
-                        <span class="card-title">Create Student</span>
-                    </div>
-                    <div class="card-body">
+                <div class="cardFem">
+                
+                    <span class="cardTitle">Student data</span>
+                
+                    <div class="cardBody">
                         <form method="POST" action="{{ route('students.store') }}"  role="form" enctype="multipart/form-data">
                             @csrf
 
@@ -24,7 +21,6 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
+
     </section>
 @endsection
