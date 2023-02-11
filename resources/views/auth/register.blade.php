@@ -64,11 +64,10 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="colInput">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
+                            <button type="submit" class="btn btn-primary">
+                            {{ __('Register') }}
+                            </button>
+                            
                         </div>
                     </form>
                 </div>
