@@ -33,9 +33,9 @@ main{
         text-align:center;
         font-family: 'Montserrat';
         border-radius: 10px;
-        padding:10px 0px 10px 5px;
-        font-weight:bold;
-        font-size:17px;
+        padding:7px 7px 7px 7px;
+        font-weight:normal;
+        font-size:18px;
     }
 
     .cardBody{
@@ -69,11 +69,11 @@ label{
     width: 100%!important;
     background: #AEA0D0;
     color:#ffffff;
-    text-align:left;
+    text-align:left!important;
     font-family: 'Montserrat';
     border-radius: 10px;
-    padding:10px 0px 10px 5px;
-    font-weight:bold;
+    padding:10px 5px 10px 5px;
+    font-weight:normal;
     font-size:13px;
     
 }
@@ -81,7 +81,7 @@ label{
     width: 100%!important;
     background: #ffffff;
     border-radius: 10px;
-    padding:10px 0px 10px 5px;
+    padding:7px 7px 7px 7px;
     color:#000000;
     border:0;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -116,7 +116,7 @@ a button[type=submit].btnRegister{
     color:#ffffff;
     border:0;
     background: #AEA0D0;
-    padding:10px 0px 10px 5px;
+    padding:7px 7px 7px 7px;
     margin:0 0 0 90%;
     font-size:13px;
     background-image: url("../img/plusIcon.png");
@@ -142,7 +142,7 @@ a button[type=submit].btnLogin{
     color:#ffffff;
     border:0;
     background: #AEA0D0;
-    padding:10px 0px 10px 5px;
+    padding:7px 7px 7px 7px;
     font-size:13px;
 }
 a button[type=submit].btnLogin:hover{
@@ -157,7 +157,7 @@ a.btnForgot{
     color:#ffffff;
     border:0;
     background: #AEA0D0;
-    padding:10px 0px 10px 5px;
+    padding:7px 7px 7px 7px;
     font-size:13px;
     text-decoration:none;
 }
@@ -174,7 +174,7 @@ a button[type=reset].btnCancel{
     border:0;
     background: #FF9C64;
     font-size:13px;
-    padding:10px 0px 10px 5px;
+    padding:7px 7px 7px 7px;
     margin:0 0 0 100%;
     background-image: url("../img/backIcon.png");
     background-repeat: no-repeat;
